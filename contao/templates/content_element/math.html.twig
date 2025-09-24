@@ -1,0 +1,22 @@
+{% extends "@Contao/content_element/_base.html.twig" %}
+
+
+{% block content %}
+    <h1>Math</h1>
+    <div class="math">{{ data.math_text | raw }}</div>
+
+    <script>
+
+
+        (function() {
+            const mathContainer = document.querySelectorAll('.math');
+
+            mathContainer.forEach(function(math) {
+                katex.render(math.textContent, math, {
+
+                })
+            })
+        })();
+    </script>
+
+{% endblock %}

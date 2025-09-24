@@ -1,0 +1,23 @@
+{
+    "name": "clickpress/contao-math-bundle",
+    "description": "Provides a content element to render mathematic equations from LaTeX using KaTeX",
+    "type": "contao-bundle",
+    "require": {
+        "contao/core-bundle": "^5.3"
+    },
+    "license": "LGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Clickpress\\ContaoMathBundle\\": "src/"
+        }
+    },
+    "extra": {
+      "contao-manager-plugin": "Clickpress\\ContaoMathBundle\\ContaoManager\\Plugin"
+    },
+    "authors": [
+        {
+            "name": "Stefan Schulz-Lauterbach",
+            "email": "ssl@clickpress.de"
+        }
+    ]
+}
